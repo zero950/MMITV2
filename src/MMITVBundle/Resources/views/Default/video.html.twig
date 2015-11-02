@@ -1,0 +1,7 @@
+{% render(controller('MMITVBundle:Videos:Url'))  %}
+
+{{ info.title }}
+
+{% for url in url %}
+  <br/>{{ url.url }}<br/>
+{% endfor %}

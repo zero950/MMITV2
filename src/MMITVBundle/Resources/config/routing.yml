@@ -1,0 +1,23 @@
+home:
+  path: /
+  defaults: { _controller: MMITVBundle:Default:index}
+
+url:
+  path: /url
+  defaults: { _controller: MMITVBundle:Videos:Url}
+
+url2:
+  path: /url2
+  defaults: { _controller: MMITVBundle:Videos:index}
+
+video:
+  path: /video
+  defaults: { _controller: MMITVBundle:Videos:video}
+
+agenda:
+  path: /agenda
+  defaults: { _controller: MMITVBundle:Agenda:index}
+
+direct:
+  path: /direct
+  defaults: { _controller: MMITVBundle:Videos:direct}
