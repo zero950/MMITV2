@@ -1,0 +1,56 @@
+{% extends "MMITVBundle::backoffice.html.twig" %}
+
+
+{% block title %}
+    {{ parent() }} - Dashboard
+{% endblock %}
+
+
+{% block content %}
+    <!-- CONTENT------------------------------------------------- -->
+    <div class="content">
+        <!-- AGENDA-->
+        <a href="../MMITV2/src/MMITVBundle/Resources/views/Dashboard/agenda.html">
+            <div class="agenda">
+                <h1>Agenda</h1>
+            </div>
+        </a>
+        <!-- PLAYLISTS-->
+        <a href="../MMITV2/src/MMITVBundle/Resources/views/Dashboard/playlists.html">
+            <div class="playlists">
+                <h1>Playlists</h1>
+            </div>
+        </a>
+
+        <!--DIRECT-->
+        <a href="{{ path('direct') }}">
+            <div class="direct">
+                <h1>Direct</h1>
+            </div>
+        </a>
+        <!--HABILLAGE-->
+        <a href="habillage.html">
+            <div class="habillage">
+                <h1>Habillage</h1>
+            </div>
+        </a>
+        <!--WEBTV -->
+        <a href="webtv.html">
+            <div class="webtv">
+                <h1>WebTV</h1>
+            </div>
+        </a>
+        <!--PRODMMI-->
+        <a href="prodmmi.html">
+            <div class="prodmmi">
+                <h1>Production MMI</h1>
+            </div>
+        </a>
+        <!--TUTOS-->
+        <a href="tutos.html">
+            <div class="tutos">
+                <h1>Tutos</h1>
+            </div>
+        </a>
+    </div>
+{% endblock %}

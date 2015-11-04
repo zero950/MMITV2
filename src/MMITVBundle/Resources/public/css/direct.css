@@ -1,0 +1,231 @@
+/* line 5, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Gobold Regular";
+  src: url('../fonts/fontface/Gobold Regular.ttf?1392822396') format('truetype');
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url('../fonts/fontface/Lato-Regular.ttf?1446417416') format('truetype');
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url('../fonts/fontface/Lato-Bold.ttf?1446417416') format('truetype');
+}
+/* line 8, ../sass/direct.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/direct.scss */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 18, ../sass/direct.scss */
+.container {
+  height: 1080px;
+  width: 1920px;
+  background-color: blue;
+  font-family: 'Lato Regular', sans-serif;
+}
+
+/* line 25, ../sass/direct.scss */
+.main {
+  width: 1560px;
+}
+/* line 28, ../sass/direct.scss */
+.main .player {
+  height: 880px;
+  width: 1560px;
+  background-color: black;
+}
+/* line 33, ../sass/direct.scss */
+.main .container-bandeau {
+  position: relative;
+}
+/* line 35, ../sass/direct.scss */
+.main .container-bandeau .hover-container {
+  height: 120px;
+  width: 1560px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+  position: absolute;
+  bottom: 201px;
+}
+/* line 42, ../sass/direct.scss */
+.main .container-bandeau .hover-container .logohover {
+  width: 280px;
+  height: 120px;
+  float: left;
+  text-align: center;
+  padding-left: 130px;
+  padding-top: 40px;
+}
+/* line 50, ../sass/direct.scss */
+.main .container-bandeau .hover-container .texthover {
+  width: 1270px;
+  height: 100px;
+  float: left;
+  padding-top: 20px;
+  font-size: 30px;
+  line-height: normal;
+  padding-left: 50px;
+  color: #49499b;
+}
+/* line 61, ../sass/direct.scss */
+.main .container-bandeau .bandeau {
+  height: 202px;
+  width: 100%;
+  background-color: #49499b;
+  padding-top: 50px;
+}
+/* line 67, ../sass/direct.scss */
+.main .container-bandeau .bandeau .logohover {
+  width: 280px;
+  height: 148px;
+  float: left;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+/* line 78, ../sass/direct.scss */
+.main .container-bandeau .bandeau .texthover {
+  width: 1270px;
+  height: 100px;
+  float: left;
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: normal;
+  padding-left: 50px;
+  color: white;
+}
+
+/* line 94, ../sass/direct.scss */
+.side {
+  width: 360px;
+  height: 1085px;
+  float: right;
+  margin-top: -1085px;
+  background-image: url("../img/download02.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 30 0;
+}
+/* line 105, ../sass/direct.scss */
+.side .logo {
+  color: black;
+  padding: 5px;
+  text-transform: uppercase;
+  border: 5px black solid;
+  width: 200px;
+  margin: 0 auto;
+  -moz-box-shadow: -14px 15px 0px 0px black;
+  -webkit-box-shadow: -14px 15px 0px 0px black;
+  box-shadow: -14px 15px 0px 0px black;
+  margin-top: 50px;
+}
+/* line 114, ../sass/direct.scss */
+.side .logo h2 {
+  font-size: 30px;
+}
+/* line 120, ../sass/direct.scss */
+.side .time {
+  font-size: 80px;
+  color: black;
+  margin-top: 120px;
+  text-shadow: 2px 2px 0 white;
+}
+/* line 129, ../sass/direct.scss */
+.side .programmenow {
+  font-size: 40px;
+  color: white;
+  margin-top: 120px;
+  text-shadow: 2px 2px 0 black;
+}
+/* line 137, ../sass/direct.scss */
+.side .programmenext {
+  font-size: 40px;
+  color: white;
+  margin-top: 120px;
+  text-shadow: 2px 2px 0 black;
+}
+/* line 144, ../sass/direct.scss */
+.side .social {
+  font-size: 30px;
+  color: white;
+  margin-top: 220px;
+  text-shadow: 2px 2px 0 black;
+}
+/* line 150, ../sass/direct.scss */
+.side .social span {
+  font-size: 40px;
+}

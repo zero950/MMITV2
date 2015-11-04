@@ -2,22 +2,26 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}
+        <title>{% block title %}MMITV{% endblock %}</title>
+        {#STYLE#}
             <link rel="stylesheet" href="{{ asset('bundles/adesignscalendar/css/fullcalendar/fullcalendar.css') }}" />
+        {% block stylesheets %}
         {% endblock %}
+        {#FAVICON#}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        {%- include "MaterializeBundle:Materialize:css.html.twig" -%}
+        {#{%- include "MaterializeBundle:Materialize:css.html.twig" -%}#}
     </head>
     <body>
+        {#BODY#}
         {% block body %}{% endblock %}
-        {% block javascripts %}
+        {#JS#}
             <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
             <script src="{{ path('fos_js_routing_js', {'callback': 'fos.Router.setData'}) }}"></script>
             <script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/jquery/jquery-1.8.2.min.js') }}"></script>
             <script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/fullcalendar/jquery.fullcalendar.min.js') }}"></script>
             <script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/calendar-settings.js') }}"></script>
+        {% block javascripts %}
         {% endblock %}
-        {%- include "MaterializeBundle:Materialize:js.html.twig" -%}
+        {#{%- include "MaterializeBundle:Materialize:js.html.twig" -%}#}
     </body>
 </html>

@@ -1,6 +1,6 @@
 home:
   path: /
-  defaults: { _controller: MMITVBundle:Default:index}
+  defaults: { _controller: FOSUserBundle:Security:login}
 
 url:
   path: /url
@@ -21,3 +21,11 @@ agenda:
 direct:
   path: /direct
   defaults: { _controller: MMITVBundle:Videos:direct}
+
+dashboard:
+    path:     /dashboard
+    defaults: { _controller: MMITVBundle:Dashboard:index }
+
+index:
+    path:     /direct
+    defaults: { _controller: MMITVBundle:Direct:index }

@@ -1,0 +1,96 @@
+header{
+    text-align: center;
+    font-family: 'Gobold Regular', sans-serif;
+    padding-top: 20px;
+    &:nth-child(2){
+        float: left;
+    }
+
+    a{
+        color: #6831ff;
+        text-decoration: none;
+
+        &:hover{
+            color: #54ff5b;
+        }
+        &:visited{
+            text-decoration: none;
+        }
+    }
+
+    .logo{
+        color: black;
+        padding: 5px;
+        text-transform: uppercase;
+        border: 5px black solid;
+        width: 200px;
+        margin-left: 50px;
+        @include box-shadow(-14px 15px 0px 0px black);
+        h2{
+            font-size: 50px;
+        }
+        a{
+            color: black;
+        }
+    }
+    //MENU
+    ul {
+        text-align: center;
+        font-family: 'Lato Bold', sans-serif;
+        font-size: 16px;
+        color: #6831ff;
+        display: inline;
+        margin: 0;
+        padding: 15px 4px 17px 0;
+        list-style: none;
+        li {
+            width: 170px;
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+            padding: 15px 20px;
+            background: #fff;
+            //cursor: pointer;
+            border: 5px #6831ff solid;
+            @include box-shadow(10px -10px 0px 0px #6831ff);
+
+            &:hover {
+                color: $green;
+                ul {
+                    display: block;
+                    border-top: none;
+                    text-align: left;
+                }
+            }
+            ul {
+                padding: 0;
+                position: absolute;
+                top: 48px;
+                left: -5px;
+                width: 210px;
+                display: none;
+                z-index: 100;
+                border: 5px #6831ff solid;
+                li {
+                    background: white;
+                    border: none;
+                    display: block;
+                    color: $green;
+                    @include box-shadow(none);
+                    &:hover{
+                        a{
+                            color: $green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .user{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #6831ff;
+    }
+}

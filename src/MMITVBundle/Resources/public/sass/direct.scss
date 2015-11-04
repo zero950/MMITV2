@@ -1,0 +1,154 @@
+//IMPORTS
+@import "compass/reset";
+@import "compass/css3";
+@import "fonts";
+@import "colors";
+
+//GENERAL
+*{
+	@include box-sizing(border-box);
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+// CONTAINER
+.container{
+	height: 1080px;
+	width: 1920px;
+	background-color: blue;
+	font-family: 'Lato Regular', sans-serif;
+}
+// Player / bandeau / diffusion de tweets
+.main{
+	width: 1560px;
+
+	.player{
+		height: 880px;
+		width: 1560px;
+		background-color: black;
+	}
+	.container-bandeau{
+		position: relative;
+		.hover-container{
+			height: 120px;
+			width: 1560px ;
+			background-color: rgba(255, 255, 255, 0.8);
+			z-index: 100;
+			position: absolute; // à retirer pour retirer le hover
+			bottom: 201px;
+			.logohover{
+				width: 280px;
+				height: 120px;
+				float: left;
+				text-align: center;
+				padding-left: 130px;
+				padding-top: 40px;
+			}
+			.texthover{
+				width: 1270px;
+				height: 100px;
+				float: left;
+				padding-top: 20px;
+				font-size: 30px;
+				line-height: normal;
+				padding-left: 50px;
+				color: $blue;
+			}
+		}
+		.bandeau{
+			height: 202px;
+			width: 100%;
+			background-color: $blue;
+			padding-top: 50px;
+
+			.logohover{
+				width: 280px;
+				height: 148px;
+				float: left;
+				text-align: center;
+				//padding-left: 130px;
+				//padding-top: 50px;
+				color: white;
+				font-size: 25px;
+
+			}
+			.texthover{
+				width: 1270px;
+				height: 100px;
+				float: left;
+				margin-top: 20px;
+				font-size: 30px;
+				line-height: normal;
+				padding-left: 50px;
+				color: white;
+			}
+
+		}
+	}
+}
+
+// SIDEBAR
+.side{
+	width: 360px;
+	height: 1085px;
+	float: right;
+	margin-top: -1085px;
+	background-image: url('../img/download02.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 30 0;
+	.logo{
+		color: black;
+		padding: 5px;
+		text-transform: uppercase;
+		border: 5px black solid;
+		width: 200px;
+		margin: 0 auto;
+		@include box-shadow(-14px 15px 0px 0px black);
+		margin-top: 50px;
+		h2{
+			font-size: 30px;
+		}
+	}
+
+	
+	.time{
+		
+		font-size: 80px;
+		color: black;
+		margin-top: 120px;
+		@include text-shadow(2px 2px 0 white);
+		
+	}
+	
+	.programmenow{
+		
+		font-size: 40px;
+		color: white;
+		margin-top: 120px;
+		@include text-shadow(2px 2px 0 black);
+	}
+	
+	.programmenext{
+		
+		font-size: 40px;
+		color: white;
+		margin-top: 120px;
+		@include text-shadow(2px 2px 0 black);
+	}
+	.social{
+		font-size: 30px;
+		color: white;
+		margin-top: 220px;
+		@include text-shadow(2px 2px 0 black);
+
+		span{
+			font-size: 40px;
+		}
+	}
+}

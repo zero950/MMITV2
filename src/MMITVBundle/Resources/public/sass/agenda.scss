@@ -1,0 +1,37 @@
+//IMPORTS
+@import "compass/reset";
+@import "compass/css3";
+@import "fonts";
+@import "colors";
+
+//GENERAL
+h1{
+}
+
+h2{
+
+}
+
+h3{
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+a{
+    text-decoration: none;
+    &:visited{
+        text-decoration: none;
+    }
+}
+
+//HEADER
+@import "header";
+
+
+//CONTENT
+.content {
+}
+
+//FOOTER
+@import "footer";

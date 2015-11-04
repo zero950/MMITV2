@@ -1,0 +1,94 @@
+//IMPORTS
+@import "compass/reset";
+@import "compass/css3";
+
+
+//GENERAL
+body{
+    background: url("../img/download.jpg") no-repeat;
+    background-size: cover;
+    max-height: 100%;
+
+}
+
+h1{
+    color: red;
+    font-size: 40px;
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: bold;
+}
+span{
+    color: #1eb4ff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+//LOGO
+.logo{
+    margin-top: 6%;
+    margin-bottom: 4%;
+    margin-left: 25%;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background: white;
+    border: 10px red solid;
+    font-family: 'Lato Bold', sans-serif;
+    @include box-shadow(-14px 15px 0px 0px red);
+
+}
+
+//LOGIN
+.login{
+    background: white;
+    margin: 0 auto;
+    padding: 50px;
+    border: 10px black solid;
+    height: 25%;
+    width: 75%;
+    color: red;
+    @include box-shadow(-14px 15px 0px 0px black);
+
+    
+    input{
+        border: 2px red solid;
+        @include border-radius(5px);
+        text-decoration: none;
+        font-weight: bold;
+        color: red;
+        margin: 5px;
+        width: 75%;
+        padding: 10px;
+    }
+    .submit{
+        background: red;
+        @include border-radius(5px);
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        width: 50%;
+    }
+    .black {
+        background:
+            linear-gradient(135deg, transparent 10px, #000000 0) top left,
+            linear-gradient(225deg, transparent 10px, #000000 0) top right,
+            linear-gradient(315deg, transparent 10px, #000000 0) bottom right,
+            linear-gradient(45deg,  transparent 10px, #000000 0) bottom left;
+        background-color: black;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+    }
+}

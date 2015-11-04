@@ -1,0 +1,49 @@
+footer {
+    margin-top: 20px;
+    padding-top: 30px;
+    height: 170px;
+    background: #ececf6;
+    text-align: center;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 18px;
+
+    a {
+        color: #8087f6;
+        &:hover{
+            color: $green;
+        }
+    }
+    .footnav {
+        a{
+            margin-left: 30px;
+
+        }
+    }
+
+    .footsubnav {
+        padding-left: 620px;
+
+    }
+    ul {
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        margin-left: 5%;
+        margin-top: 30px;
+        li{
+            margin-bottom: 6px;
+        }
+
+    }
+
+    .footbutton {
+        background: #d6d6d6;
+        width: 50px;
+        height: 50px;
+        @include border-radius(100%);
+        float: right;
+        line-height: 50px;
+        color: white;
+        bottom: 0;
+    }
+}

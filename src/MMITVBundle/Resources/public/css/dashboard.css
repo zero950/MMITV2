@@ -1,0 +1,391 @@
+/* line 5, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Gobold Regular";
+  src: url('../fonts/fontface/Gobold Regular.ttf?1392822396') format('truetype');
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url('../fonts/fontface/Lato-Regular.ttf?1446417416') format('truetype');
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url('../fonts/fontface/Lato-Bold.ttf?1446417416') format('truetype');
+}
+/* line 15, ../sass/dashboard.scss */
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* line 21, ../sass/dashboard.scss */
+a {
+  text-decoration: none;
+}
+/* line 23, ../sass/dashboard.scss */
+a:visited {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_header.scss */
+header {
+  text-align: center;
+  font-family: 'Gobold Regular', sans-serif;
+  padding-top: 20px;
+}
+/* line 5, ../sass/_header.scss */
+header:nth-child(2) {
+  float: left;
+}
+/* line 9, ../sass/_header.scss */
+header a {
+  color: #6831ff;
+  text-decoration: none;
+}
+/* line 13, ../sass/_header.scss */
+header a:hover {
+  color: #54ff5b;
+}
+/* line 16, ../sass/_header.scss */
+header a:visited {
+  text-decoration: none;
+}
+/* line 21, ../sass/_header.scss */
+header .logo {
+  color: black;
+  padding: 5px;
+  text-transform: uppercase;
+  border: 5px black solid;
+  width: 200px;
+  margin-left: 50px;
+  -moz-box-shadow: -14px 15px 0px 0px black;
+  -webkit-box-shadow: -14px 15px 0px 0px black;
+  box-shadow: -14px 15px 0px 0px black;
+}
+/* line 29, ../sass/_header.scss */
+header .logo h2 {
+  font-size: 50px;
+}
+/* line 32, ../sass/_header.scss */
+header .logo a {
+  color: black;
+}
+/* line 37, ../sass/_header.scss */
+header ul {
+  text-align: center;
+  font-family: 'Lato Bold', sans-serif;
+  font-size: 16px;
+  color: #6831ff;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+}
+/* line 46, ../sass/_header.scss */
+header ul li {
+  width: 170px;
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  border: 5px #6831ff solid;
+  -moz-box-shadow: 10px -10px 0px 0px #6831ff;
+  -webkit-box-shadow: 10px -10px 0px 0px #6831ff;
+  box-shadow: 10px -10px 0px 0px #6831ff;
+}
+/* line 57, ../sass/_header.scss */
+header ul li:hover {
+  color: #00fe00;
+}
+/* line 59, ../sass/_header.scss */
+header ul li:hover ul {
+  display: block;
+  border-top: none;
+  text-align: left;
+}
+/* line 65, ../sass/_header.scss */
+header ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: -5px;
+  width: 210px;
+  display: none;
+  z-index: 100;
+  border: 5px #6831ff solid;
+}
+/* line 74, ../sass/_header.scss */
+header ul li ul li {
+  background: white;
+  border: none;
+  display: block;
+  color: #00fe00;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 81, ../sass/_header.scss */
+header ul li ul li:hover a {
+  color: #00fe00;
+}
+/* line 90, ../sass/_header.scss */
+header .user {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #6831ff;
+}
+
+/* line 33, ../sass/dashboard.scss */
+.content {
+  text-align: center;
+  font-family: 'Gobold Regular', sans-serif;
+  font-size: 2em;
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 black;
+  position: relative;
+  padding-top: 50px;
+  width: 960px;
+  margin: 0 auto;
+  height: 970px;
+}
+/* line 47, ../sass/dashboard.scss */
+.content a {
+  color: white;
+}
+/* line 51, ../sass/dashboard.scss */
+.content .agenda {
+  height: 170px;
+  width: 420px;
+  background: url("../img/agenda.png");
+  line-height: 170px;
+  position: absolute;
+  left: 250px;
+}
+/* line 58, ../sass/dashboard.scss */
+.content .agenda:hover {
+  border: 10px #00fe00 solid;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0.9;
+}
+/* line 67, ../sass/dashboard.scss */
+.content .playlists {
+  height: 270px;
+  width: 270px;
+  background: url("../img/playlist.png");
+  line-height: 270px;
+  position: absolute;
+  top: 250px;
+  left: 170px;
+}
+/* line 75, ../sass/dashboard.scss */
+.content .playlists:hover {
+  border: 10px #49499b solid;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0.8;
+}
+/* line 83, ../sass/dashboard.scss */
+.content .direct {
+  height: 444px;
+  width: 380px;
+  background: url("../img/direct.png");
+  line-height: 444px;
+  position: absolute;
+  top: 230px;
+  left: 600px;
+}
+/* line 91, ../sass/dashboard.scss */
+.content .direct:hover {
+  border: 10px #00fe00 solid;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0.9;
+}
+/* line 99, ../sass/dashboard.scss */
+.content .habillage {
+  height: 150px;
+  width: 400px;
+  background: url("../img/habillage.png");
+  line-height: 150px;
+  position: absolute;
+  top: 550px;
+  left: 80px;
+}
+/* line 107, ../sass/dashboard.scss */
+.content .habillage:hover {
+  border: 10px #00fe00 solid;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0.9;
+}
+/* line 115, ../sass/dashboard.scss */
+.content .webtv {
+  height: 260px;
+  width: 330px;
+  background: url("../img/webtv.png");
+  line-height: 260px;
+  position: absolute;
+  top: 750px;
+  left: 100px;
+}
+/* line 123, ../sass/dashboard.scss */
+.content .webtv:hover {
+  border: 10px #00fe00 solid;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0.9;
+}
+/* line 131, ../sass/dashboard.scss */
+.content .prodmmi {
+  height: 200px;
+  width: 360px;
+  background: url("../img/prodmmi.png");
+  line-height: 200px;
+  position: absolute;
+  top: 750px;
+  left: 500px;
+}
+/* line 139, ../sass/dashboard.scss */
+.content .prodmmi:hover {
+  border: 10px #49499b solid;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0.8;
+}
+/* line 147, ../sass/dashboard.scss */
+.content .tutos {
+  height: 230px;
+  width: 184px;
+  background: url("../img/tuto.png");
+  line-height: 230px;
+  position: absolute;
+  top: 700px;
+  left: 900px;
+}
+/* line 155, ../sass/dashboard.scss */
+.content .tutos:hover {
+  border: 10px #00fe00 solid;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0.9;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  margin-top: 20px;
+  padding-top: 30px;
+  height: 170px;
+  background: #ececf6;
+  text-align: center;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 18px;
+}
+/* line 10, ../sass/_footer.scss */
+footer a {
+  color: #8087f6;
+}
+/* line 12, ../sass/_footer.scss */
+footer a:hover {
+  color: #00fe00;
+}
+/* line 17, ../sass/_footer.scss */
+footer .footnav a {
+  margin-left: 30px;
+}
+/* line 23, ../sass/_footer.scss */
+footer .footsubnav {
+  padding-left: 620px;
+}
+/* line 27, ../sass/_footer.scss */
+footer ul {
+  float: left;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+/* line 33, ../sass/_footer.scss */
+footer ul li {
+  margin-bottom: 6px;
+}
+/* line 39, ../sass/_footer.scss */
+footer .footbutton {
+  background: #d6d6d6;
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  float: right;
+  line-height: 50px;
+  color: white;
+  bottom: 0;
+}
