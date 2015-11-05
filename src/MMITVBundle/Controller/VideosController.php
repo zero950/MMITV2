@@ -15,6 +15,7 @@ class VideosController extends Controller
     $form = $this->createForm(new UrlFormType());
         return $this->render('MMITVBundle:Default:url.html.twig', array('form' => $form->createView()));
     }
+    
     public function indexAction(Request $request)
     {
         $entity = new Url();
