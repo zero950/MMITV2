@@ -1,4 +1,4 @@
-/* line 5, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -128,12 +128,13 @@ header .logo {
 /* line 29, ../sass/_header.scss */
 header .logo h2 {
   font-size: 50px;
+  font-family: 'Gobold Regular', sans-serif;
 }
-/* line 32, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 header .logo a {
   color: black;
 }
-/* line 37, ../sass/_header.scss */
+/* line 38, ../sass/_header.scss */
 header ul {
   text-align: center;
   font-family: 'Lato Bold', sans-serif;
@@ -144,7 +145,7 @@ header ul {
   padding: 15px 4px 17px 0;
   list-style: none;
 }
-/* line 46, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 header ul li {
   width: 170px;
   display: inline-block;
@@ -157,17 +158,17 @@ header ul li {
   -webkit-box-shadow: 10px -10px 0px 0px #6831ff;
   box-shadow: 10px -10px 0px 0px #6831ff;
 }
-/* line 57, ../sass/_header.scss */
+/* line 58, ../sass/_header.scss */
 header ul li:hover {
   color: #00fe00;
 }
-/* line 59, ../sass/_header.scss */
+/* line 60, ../sass/_header.scss */
 header ul li:hover ul {
   display: block;
   border-top: none;
   text-align: left;
 }
-/* line 65, ../sass/_header.scss */
+/* line 66, ../sass/_header.scss */
 header ul li ul {
   padding: 0;
   position: absolute;
@@ -178,7 +179,7 @@ header ul li ul {
   z-index: 100;
   border: 5px #6831ff solid;
 }
-/* line 74, ../sass/_header.scss */
+/* line 75, ../sass/_header.scss */
 header ul li ul li {
   background: white;
   border: none;
@@ -188,11 +189,11 @@ header ul li ul li {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 81, ../sass/_header.scss */
+/* line 82, ../sass/_header.scss */
 header ul li ul li:hover a {
   color: #00fe00;
 }
-/* line 90, ../sass/_header.scss */
+/* line 91, ../sass/_header.scss */
 header .user {
   position: absolute;
   top: 20px;

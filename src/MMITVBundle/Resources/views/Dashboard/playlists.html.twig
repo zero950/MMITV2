@@ -1,0 +1,68 @@
+{% extends "MMITVBundle::backoffice.html.twig" %}
+
+
+{% block title %}
+    {{ parent() }} - Playlist
+{% endblock %}
+
+{% block custom_style %}
+    {% stylesheets 'bundles/mmitv/css/playlists.css' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+
+{% block content %}
+    <!-- CONTENT------------------------------------------------- -->
+    <div class="content">
+        <h1>playlists</h1>
+        <div class="hold">
+            {% for entity in entities %}
+                <!-- ITEM-->
+                <div class="item">
+                    <div class="before"></div>
+                    <div class="number">
+                        <p><span>8</span><br>vidéos</p>
+                    </div>
+                    <div class="title">
+                        <ul>
+                            <li>{{ entity.nom }}</li>
+                            <!-- Hamburger menu-->
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="">Modifier</a></li>
+                                    <li><a href="">Supprimer</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+
+                {#<tr>
+                    <td><a href="{{ path('playlist_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                    <td>{{ entity.nom }}</td>
+                    <td>{{ entity.description }}</td>
+                    <td>{{ entity.type }}</td>
+                    <td>{{ entity.duree }}</td>
+                    <td>{{ entity.nbrvideo }}</td>
+                    <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="{{ path('playlist_show', { 'id': entity.id }) }}">show</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('playlist_edit', { 'id': entity.id }) }}">edit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+#}
+
+        </div>
+    </div>
+{% endblock %}

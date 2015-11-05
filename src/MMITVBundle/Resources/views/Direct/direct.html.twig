@@ -1,7 +1,85 @@
-{% extends "::base.html.twig" %}
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8" />
+            <title>{% block title %}MMITV - Direct{% endblock %}</title>
+            {#STYLE#}
+            <link rel="stylesheet" href="{{ asset('bundles/adesignscalendar/css/fullcalendar/fullcalendar.css') }}" />
+            {% block stylesheets %}
+                {% stylesheets 'bundles/mmitv/css/direct.css' filter='cssrewrite' %}
+                    <link rel="stylesheet" href="{{ asset_url }}" />
+                {% endstylesheets %}
+                {% stylesheets 'bundles/mmitv/fonts/font-awesome-4.4.0/css/font-awesome.min.css' filter='cssrewrite' %}
+                    <link rel="stylesheet" href="{{ asset_url }}" />
+                {% endstylesheets %}
+            {% endblock %}
+            {#FAVICON#}
+            <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+            {#{%- include "MaterializeBundle:Materialize:css.html.twig" -%}#}
+    </head>
+    <body ng-app="myApp">
+        <div class="container">
+            <div class="main">
+                <div class="player">
+                    <iframe class="video" width="1560px" height="860px" src=https://www.youtube.com/embed/QJdC4wFqS-w?list=PLjwdMgw5TTLU5x6bUs_FkyxF9vt0BWfIo&amp?rel=0&iv_load_policy=3&controls=0&autoplay=1"></iframe>
+                </div>
+                <div class="container-bandeau">
+                    <div class="hover-container">
+                        <div class="logohover">
+                            <img src="videos.logo" class="" alt="" />
+                        </div>
+                        <div class="texthover">
+                            <p> video.title </p>
+                        </div>
+                    </div>
+                    <div class="bandeau">
+                        <div class="logohover">
+                            <h2>habillage.title</h2>
+                        </div>
+                        <div class="texthover">
+                            <p> habillage.message</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="logo">
+                    <a href="{{ path('dashboard') }}">
+                        <h2>MMI TV</h2>
+                    </a>
+                </div>
+                <div class="time" ng-controller="TimeCtrl">
+                    {#<p>{{ clock | date:'HH:mm:ss' }}</p>#}
+                </div>
+                <div class="programmenow">
+                    <p>Vous regardez</p>
+                    <h2>video.title</h2>
+                </div>
+                <div class="programmenext">
+                    <p>A suivre</p>
+                    <h2>nextvideo.title</h2>
+                </div>
+                <div class="social">
+                    <p>
+                                <span>
+                                    <i class="fa fa-twitter"></i>
+                                </span>
+                        @MMI_Troyes
+                    </p>
+                </div>
+            </div>
+        </div>
 
-{% block title %}MMITVBundle:Direct:index{% endblock %}
+        {#JS#}
+        <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', {'callback': 'fos.Router.setData'}) }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/jquery/jquery-1.8.2.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/fullcalendar/jquery.fullcalendar.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/calendar-settings.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/mmitv/js/angular.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/mmitv/js/clock.js') }}"></script>
+        {#{%- include "MaterializeBundle:Materialize:js.html.twig" -%}#}
+    </body>
+</html>
 
-{% block body %}
-<h1>Welcome to the Direct:index page</h1>
-{% endblock %}
+

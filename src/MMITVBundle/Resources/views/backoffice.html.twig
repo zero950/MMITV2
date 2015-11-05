@@ -1,12 +1,12 @@
 {% extends '::base.html.twig' %}
 
 {% block stylesheets %}
-    {% stylesheets 'bundles/mmitv/css/dashboard.css' filter='cssrewrite' %}
-        <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
     {% stylesheets 'bundles/mmitv/fonts/font-awesome-4.4.0/css/font-awesome.min.css' filter='cssrewrite' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
+
+    {% block custom_style %}{% endblock %}
+
 {% endblock %}
 
 
@@ -26,22 +26,33 @@
                         <h3>Créer</h3>
                         <ul>
                             <li><a href="">Habillage TV</a></li>
-                            <li><a href="">Playlist</a></li>
+                            <li><a href="{{ path('playlists') }}">Playlist</a></li>
                             <li><a href="">Émission WebTV</a></li>
                             <li><a href="">Production MMI</a></li>
                             <li><a href="">Tuto</a></li>
                         </ul>
                     </li>
                     <li><a href=""><h3>Supprimer</h3></a></li>
-                    {#{% if %}#}
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <li><a href=""><h3>Utilisateurs</h3></a></li>
-                    {#{% endif %}#}
+                    {% else %}
+
+                    {% endif %}
                 </ul>
             </nav>
             <div class="user">
                 <i class="fa fa-user"></i>
-                <h4>user.nom</h4><br>
-                <a href="{{ path('fos_user_security_login') }}">Déconnexion</a>
+                <h4>{{ app.user|capitalize }}</h4><br>
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <a href="{{ path('fos_user_security_logout') }}">
+                        Déconnexion
+                    </a>
+
+                {% else %}
+                    <a href="{{ path('fos_user_security_login') }}">
+                       Connexion {#{{ 'layout.login'|trans({}, 'FOSUserBundle') }}#}
+                    </a>
+                {% endif %}
             </div>
         </header>
     {% endblock %}
@@ -59,7 +70,7 @@
             </div>
             <div class="footsubnav">
                 <ul>
-                    <li><a href="">Direct</a></li>
+                    <li><a href="{{ path('direct') }}">Direct</a></li>
                     <li><a href="">Habillage</a></li>
                     <li><a href="">Web TV</a></li>
                     <li><a href="">Playlists</a></li>

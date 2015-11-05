@@ -1,1 +1,15 @@
-{% extends '::base.html.twig' %}
+{% extends '::base_security.html.twig' %}
+
+{% block stylesheets %}
+    {% stylesheets 'bundles/mmitv/fonts/font-awesome-4.4.0/css/font-awesome.min.css' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
+    {% block custom_style %}{% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+
+{% endblock %}

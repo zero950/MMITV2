@@ -16,6 +16,7 @@ security:
             form_login:
                 provider: fos_userbundle
                 csrf_provider: security.csrf.token_manager # Use form.csrf_provider instead for Symfony <2.4
+                always_use_default_target_path: true
 
             logout:       true
             anonymous:    true
@@ -25,3 +26,11 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
+#        - { path: ^/dashboard, role: ROLE_ADMIN }
+#        - { path: ^/playlists, role: ROLE_ADMIN }
+#        - { path: ^/agenda, role: ROLE_ADMIN }
+#        - { path: ^/habillage, role: ROLE_ADMIN }
+#        - { path: ^/agenda, role: ROLE_ADMIN }
+#        - { path: ^/webtv, role: ROLE_ADMIN }
+#        - { path: ^/prodmmi, role: ROLE_ADMIN }
+#        - { path: ^/tutos, role: ROLE_ADMIN }

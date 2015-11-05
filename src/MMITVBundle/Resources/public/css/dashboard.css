@@ -75,6 +75,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Lato Bold";
   src: url('../fonts/fontface/Lato-Bold.ttf?1446417416') format('truetype');
 }
+/* line 11, ../sass/dashboard.scss */
+h2 {
+  font-family: 'Gobold Regular', sans-serif;
+}
+
 /* line 15, ../sass/dashboard.scss */
 h3 {
   font-size: 20px;
@@ -128,12 +133,13 @@ header .logo {
 /* line 29, ../sass/_header.scss */
 header .logo h2 {
   font-size: 50px;
+  font-family: 'Gobold Regular', sans-serif;
 }
-/* line 32, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 header .logo a {
   color: black;
 }
-/* line 37, ../sass/_header.scss */
+/* line 38, ../sass/_header.scss */
 header ul {
   text-align: center;
   font-family: 'Lato Bold', sans-serif;
@@ -144,7 +150,7 @@ header ul {
   padding: 15px 4px 17px 0;
   list-style: none;
 }
-/* line 46, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 header ul li {
   width: 170px;
   display: inline-block;
@@ -157,17 +163,17 @@ header ul li {
   -webkit-box-shadow: 10px -10px 0px 0px #6831ff;
   box-shadow: 10px -10px 0px 0px #6831ff;
 }
-/* line 57, ../sass/_header.scss */
+/* line 58, ../sass/_header.scss */
 header ul li:hover {
   color: #00fe00;
 }
-/* line 59, ../sass/_header.scss */
+/* line 60, ../sass/_header.scss */
 header ul li:hover ul {
   display: block;
   border-top: none;
   text-align: left;
 }
-/* line 65, ../sass/_header.scss */
+/* line 66, ../sass/_header.scss */
 header ul li ul {
   padding: 0;
   position: absolute;
@@ -178,7 +184,7 @@ header ul li ul {
   z-index: 100;
   border: 5px #6831ff solid;
 }
-/* line 74, ../sass/_header.scss */
+/* line 75, ../sass/_header.scss */
 header ul li ul li {
   background: white;
   border: none;
@@ -188,11 +194,11 @@ header ul li ul li {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 81, ../sass/_header.scss */
+/* line 82, ../sass/_header.scss */
 header ul li ul li:hover a {
   color: #00fe00;
 }
-/* line 90, ../sass/_header.scss */
+/* line 91, ../sass/_header.scss */
 header .user {
   position: absolute;
   top: 20px;

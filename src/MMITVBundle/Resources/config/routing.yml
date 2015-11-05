@@ -18,14 +18,18 @@ agenda:
   path: /agenda
   defaults: { _controller: MMITVBundle:Agenda:index}
 
-direct:
-  path: /direct
-  defaults: { _controller: MMITVBundle:Videos:direct}
+#direct:
+#  path: /direct
+#  defaults: { _controller: MMITVBundle:Videos:direct}
 
 dashboard:
     path:     /dashboard
     defaults: { _controller: MMITVBundle:Dashboard:index }
 
-index:
+direct:
     path:     /direct
     defaults: { _controller: MMITVBundle:Direct:index }
+
+playlists:
+    path:     /playlists
+    defaults: { _controller: MMITVBundle:Dashboard:playlists }

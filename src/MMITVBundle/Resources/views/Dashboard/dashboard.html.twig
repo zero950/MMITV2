@@ -5,18 +5,25 @@
     {{ parent() }} - Dashboard
 {% endblock %}
 
+{% block custom_style %}
+    {% stylesheets 'bundles/mmitv/css/dashboard.css' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+
 
 {% block content %}
     <!-- CONTENT------------------------------------------------- -->
     <div class="content">
         <!-- AGENDA-->
-        <a href="../MMITV2/src/MMITVBundle/Resources/views/Dashboard/agenda.html">
+        <a href="">
             <div class="agenda">
                 <h1>Agenda</h1>
             </div>
         </a>
         <!-- PLAYLISTS-->
-        <a href="../MMITV2/src/MMITVBundle/Resources/views/Dashboard/playlists.html">
+        <a href="{{ path('playlists') }}">
             <div class="playlists">
                 <h1>Playlists</h1>
             </div>
