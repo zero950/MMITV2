@@ -1,8 +1,33 @@
-<form action="{{ path('url2') }}" method="POST" class="input-field col s3">
-    <div class="input-field">
-        {{ form_widget(form) }}
-        <label for="url"></label>
-        <button type="submit" class="btn waves-effect waves-light">url</button>
-        {{ form_widget(form) }}
+{% extends "MMITVBundle::backoffice.html.twig" %}
+
+
+{% block title %}
+    {{ parent() }} - URL
+{% endblock %}
+
+{% block custom_style %}
+    {% stylesheets 'bundles/mmitv/css/dashboard.css' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+
+
+{% block content %}
+    <!-- CONTENT------------------------------------------------- -->
+    <div class="content">
+        <form action="{{ path('url2') }}" method="POST" class="input-field col s3">
+            <div class="input-field">
+                {{ form_widget(form) }}
+                <label for="url"></label>
+                <button type="submit" class="btn waves-effect waves-light">url</button>
+                {{ form_widget(form) }}
+            </div>
+        </form>
     </div>
-</form>
+{% endblock %}
+
+
+
+
+

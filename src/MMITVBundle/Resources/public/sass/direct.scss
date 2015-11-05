@@ -29,6 +29,13 @@ a{
 		height: 880px;
 		width: 1560px;
 		background-color: black;
+		.logo{
+			background: url("../img/logo.png");
+			width: 100px;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	}
 	.container-bandeau{
 		position: relative;

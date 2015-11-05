@@ -35,8 +35,8 @@ class VideosController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $entity = $em->getRepository('MMITVBundle:Url')->findAll();
-        var_dump($entity);
-        $info = Embed\Embed::create("https://www.youtube.com/watch?v=12Y4aJTwMkg");
+
+        $info = Embed\Embed::create($entity[3]->getUrl);
         $video =new video();
         $video->setTitre($info->title);
         $video->setDescription($info->Description);
