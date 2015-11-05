@@ -8,8 +8,8 @@ class UserController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('FOSUserBundle:Profile:index.html.twig', array(
+        return $this->render('FOSUserBundle:Profile:show.html.twig', array(
                 // ...
-            ));    }
-
+            ));
+    }
 }
