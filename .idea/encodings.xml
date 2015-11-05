@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/security.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/MMITVBundle/Resources/views/Dashboard/dashboard.html.twig" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/MMITVBundle/Resources/views/Dashboard/playlists.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/MMITVBundle/Resources/views/Playlist/edit.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/MMITVBundle/Resources/views/Playlist/index.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/MMITVBundle/Resources/views/Playlist/show.html.twig" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/MMITVBundle/Resources/views/backoffice.html.twig" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/MMITVBundle/Resources/views/security.html.twig" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -12,11 +12,4 @@ class DashboardController extends Controller
 
             ));
     }
-
-    public function playlistsAction()
-    {
-        return $this->render('MMITVBundle:Dashboard:playlists.html.twig', array(
-
-        ));
-    }
 }

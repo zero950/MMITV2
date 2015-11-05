@@ -26,11 +26,12 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
-#        - { path: ^/dashboard, role: ROLE_ADMIN }
-#        - { path: ^/playlists, role: ROLE_ADMIN }
-#        - { path: ^/agenda, role: ROLE_ADMIN }
-#        - { path: ^/habillage, role: ROLE_ADMIN }
-#        - { path: ^/agenda, role: ROLE_ADMIN }
-#        - { path: ^/webtv, role: ROLE_ADMIN }
-#        - { path: ^/prodmmi, role: ROLE_ADMIN }
-#        - { path: ^/tutos, role: ROLE_ADMIN }
+        - { path: ^/login, role: ROLE_USER }
+        - { path: ^/dashboard, role: ROLE_USER }
+        - { path: ^/playlists, role: ROLE_USER }
+        - { path: ^/agenda, role: ROLE_USER }
+        - { path: ^/habillage, role: ROLE_USER }
+        - { path: ^/agenda, role: ROLE_USER }
+        - { path: ^/webtv, role: ROLE_USER }
+        - { path: ^/prodmmi, role: ROLE_USER }
+        - { path: ^/tutos, role: ROLE_USER }

@@ -18,7 +18,7 @@ class PlaylistType extends AbstractType
             ->add('nom')
             ->add('description')
             ->add('type')
-            ->add('duree')
+            ->add('duree', 'time')
             ->add('nbrvideo')
             ->add('date')
         ;

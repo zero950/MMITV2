@@ -6,7 +6,14 @@
 
     {#STYLE#}
     <link rel="stylesheet" href="{{ asset('bundles/adesignscalendar/css/fullcalendar/fullcalendar.css') }}" />
-    {% block stylesheets %}{% endblock %}
+    {% block stylesheets %}
+        {% stylesheets 'bundles/mmitv/fonts/font-awesome-4.4.0/css/font-awesome.min.css' filter='cssrewrite' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+
+        {% block custom_style %}{% endblock %}
+
+    {% endblock %}
 
     {#FAVICON#}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />

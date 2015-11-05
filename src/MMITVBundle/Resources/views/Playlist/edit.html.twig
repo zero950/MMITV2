@@ -1,16 +1,49 @@
-{% extends '::base.html.twig' %}
+{% extends "MMITVBundle::backoffice.html.twig" %}
 
-{% block body -%}
-    <h1>Playlist edit</h1>
 
-    {{ form(edit_form) }}
-
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('playlist') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+{% block title %}
+    {{ parent() }} - Modifier playlist {{ entity.nom }}
 {% endblock %}
+
+{% block custom_style %}
+    {% stylesheets 'bundles/mmitv/css/playlists.css' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+
+{% block content %}
+    <!-- CONTENT------------------------------------------------- -->
+    <div class="content">
+        <h1>Editer la playlist</h1>
+        <div>
+            {{ form(edit_form) }}
+            <a href="{{ path('playlist') }}">
+                Retour à la playlist
+            </a>
+
+               {{ form(delete_form) }}
+
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+    {#{{ form(edit_form) }}#}
+
+        {#<ul class="record_actions">#}
+    {#<li>#}
+        {#<a href="{{ path('playlist') }}">#}
+            {#Back to the list#}
+        {#</a>#}
+    {#</li>#}
+    {#<li>{{ form(delete_form) }}</li>#}
+{#</ul>#}
+{#{% endblock %}#}

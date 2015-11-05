@@ -1,52 +1,57 @@
-{% extends '::base.html.twig' %}
+{% extends "MMITVBundle::backoffice.html.twig" %}
 
-{% block body -%}
-    <h1>Playlist</h1>
 
-    <table class="record_properties">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ entity.id }}</td>
-            </tr>
-            <tr>
-                <th>Nom</th>
-                <td>{{ entity.nom }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ entity.description }}</td>
-            </tr>
-            <tr>
-                <th>Type</th>
-                <td>{{ entity.type }}</td>
-            </tr>
-            <tr>
-                <th>Duree</th>
-                <td>{{ entity.duree }}</td>
-            </tr>
-            <tr>
-                <th>Nbrvideo</th>
-                <td>{{ entity.nbrvideo }}</td>
-            </tr>
-            <tr>
-                <th>Date</th>
-                <td>{{ entity.date|date('Y-m-d H:i:s') }}</td>
-            </tr>
-        </tbody>
-    </table>
+{% block title %}
+    {{ parent() }} - Playlist N° {{ entity.id }}
+{% endblock %}
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('playlist') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('playlist_edit', { 'id': entity.id }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+{% block custom_style %}
+    {% stylesheets 'bundles/mmitv/css/playlists.css' filter='cssrewrite' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+
+{% block content %}
+    <!-- CONTENT------------------------------------------------- -->
+    <div class="content">
+        <h1>playlists {{ entity.nom }}</h1>
+        <div>
+            <table class="record_properties">
+                <tbody>
+                <tr>
+                    <th>Nom</th>
+                    <td>{{ entity.nom }}</td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td>{{ entity.description }}</td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td>{{ entity.type }}</td>
+                </tr>
+                <tr>
+                    <th>Durée</th>
+                    <td>{{ entity.duree|date('H:i:s') }} minutes</td>
+                </tr>
+                <tr>
+                    <th>Nombre de vidéos</th>
+                    <td>{{ entity.nbrvideo }}</td>
+                </tr>
+                <tr>
+                    <th>Date de création de la playlist</th>
+                    <td>{{ entity.date|date('d/m/Y H:i') }}</td>
+                </tr>
+                </tbody>
+            </table>
+            <a href="{{ path('playlist') }}">
+                Retour aux playlists
+            </a><br>
+            <a href="{{ path('playlist_edit', { 'id': entity.id }) }}">
+                Modifier
+            </a><br>
+            {{ form(delete_form) }}
+        </div>
+    </div>
 {% endblock %}

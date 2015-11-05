@@ -12,34 +12,6 @@ class User extends \FOS\UserBundle\Model\User
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     *
-     * @Assert\NotBlank(message="Please enter your name.", groups={"Registration", "Profile"})
-     * @Assert\Length(
-     *     min=3,
-     *     max=255,
-     *     minMessage="The name is too short.",
-     *     maxMessage="The name is too long.",
-     *     groups={"Registration", "Profile"}
-     * )
-     */
-    protected $nom;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     *
-     * @Assert\NotBlank(message="Please enter your name.", groups={"Registration", "Profile"})
-     * @Assert\Length(
-     *     min=3,
-     *     max=255,
-     *     minMessage="The name is too short.",
-     *     maxMessage="The name is too long.",
-     *     groups={"Registration", "Profile"}
-     * )
-     */
-    protected $prenom;
-
-    /**
      * @ORM\OneToOne(targetEntity="Invitation")
      * @ORM\JoinColumn(referencedColumnName="code")
      * @Assert\NotNull(message="Your invitation is wrong", groups={"Registration"})

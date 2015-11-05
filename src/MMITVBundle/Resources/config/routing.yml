@@ -30,6 +30,40 @@ direct:
     path:     /direct
     defaults: { _controller: MMITVBundle:Direct:index }
 
-playlists:
-    path:     /playlists
-    defaults: { _controller: MMITVBundle:Dashboard:playlists }
+
+#PLAYLIST
+playlist:
+    path:     /playlist
+    defaults: { _controller: MMITVBundle:Playlist:index }
+
+playlist_show:
+    path:     /playlist/{id}/show
+    defaults: { _controller: MMITVBundle:Playlist:show }
+
+playlist_new:
+    path:     /playlist/new
+    defaults: { _controller: MMITVBundle:Playlist:new }
+
+playlist_create:
+    path:     /playlist/create
+    defaults: { _controller: MMITVBundle:Playlist:create }
+    methods:  POST
+
+playlist_edit:
+    path:     /playlist/{id}/edit
+    defaults: { _controller: MMITVBundle:Playlist:edit }
+
+playlist_update:
+    path:     /playlist/{id}/update
+    defaults: { _controller: MMITVBundle:Playlist:update }
+    methods:  [POST, PUT]
+
+playlist_delete:
+    path:     /playlist/{id}/delete
+    defaults: { _controller: MMITVBundle:Playlist:delete }
+    methods:  [POST, DELETE]
+
+
+index:
+    path:     /users
+    defaults: { _controller: MMITVBundle:User:index }

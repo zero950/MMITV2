@@ -26,15 +26,15 @@
                         <h3>Créer</h3>
                         <ul>
                             <li><a href="">Habillage TV</a></li>
-                            <li><a href="{{ path('playlists') }}">Playlist</a></li>
+                            <li><a href="{{ path('playlist_new') }}">Playlist</a></li>
                             <li><a href="">Émission WebTV</a></li>
                             <li><a href="">Production MMI</a></li>
                             <li><a href="">Tuto</a></li>
                         </ul>
                     </li>
                     <li><a href=""><h3>Supprimer</h3></a></li>
-                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <li><a href=""><h3>Utilisateurs</h3></a></li>
+                    {% if is_granted("ROLE_ADMIN") %}
+                    <li><a href="{{ path('fos') }}"><h3>Utilisateurs</h3></a></li>
                     {% else %}
 
                     {% endif %}
@@ -83,12 +83,12 @@
                 </ul>
             </div>
             <div class="rs">
-                <a href="">
+                <a href="http://twitter.com/MMI_Troyes">
                     <div class="footbutton">
                         <i class="fa fa-twitter"></i>
                     </div>
                 </a>
-                <a href="">
+                <a href="http://www.facebook.com/MMI-EXSRC-IUT-de-Troyes-261911857255843">
                     <div class="footbutton">
                         <i class="fa fa-facebook-f"></i>
                     </div>
@@ -100,4 +100,3 @@
 
 
 {% endblock %}
-

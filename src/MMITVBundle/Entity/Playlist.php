@@ -59,7 +59,7 @@ class Playlist
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="Date", type="date")
+     * @ORM\Column(name="Date", type="datetime")
      */
     private $date;
 
@@ -217,5 +217,9 @@ class Playlist
     {
         return $this->date;
     }
-}
 
+//    public function __toString()
+//    {
+//        return strval($this->id);
+//    }
+}
